@@ -15,6 +15,7 @@ modules:
       - name: featuresexample_html5_repo_runtime
       - name: featuresexample_uaa
       - name: featuresexample_portal
+      - name: featureflags_service
   - name: webapp_deployer
     type: com.sap.application.content
     path: deployer
@@ -75,3 +76,9 @@ resources:
     parameters:
       service-plan: standard
       service: portal
+  #FEATURE_FLAGS
+  - name: featureflags_service
+    parameters:
+      service-plan: standard
+      service: feature-flags
+    type: org.cloudfoundry.managed-service

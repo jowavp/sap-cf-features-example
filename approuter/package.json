@@ -5,9 +5,10 @@
     "node": "12.X"
   },
   "scripts": {
-    "start": "node node_modules/@sap/approuter/approuter.js"
+    "start": "node approuter.js"
   },
   "dependencies": {
-    "@sap/approuter": "^7.1.0"
+    "@sap/approuter": "^7.1.0",
+    "sap-cf-features": "0.0.6"
   }
 }

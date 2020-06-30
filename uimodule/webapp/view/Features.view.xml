@@ -5,7 +5,36 @@
   <App id="idAppControl" >
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <content>
+
+        <Table id="idProductsTable"
+		inset="false"
+		items="{
+			path: 'features>/flags'
+		}">
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Feature" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Value" />
+			</Column>
+
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{features>key}" />
+					<Text text="{features>value}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+        </content>
       </Page>
     </pages>
   </App>
