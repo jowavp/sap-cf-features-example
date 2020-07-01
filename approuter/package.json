@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "@sap/approuter": "^7.1.0",
-    "sap-cf-features": "0.0.6"
+    "sap-cf-features": "0.0.8"
   }
 }
